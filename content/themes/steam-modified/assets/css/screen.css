@@ -649,7 +649,7 @@ hr {
 }
 
 section.footer-social {
-  margin-bottom: 23px;
+  margin-bottom: 10px;
   font-size: 17px;
 }
 
@@ -658,7 +658,7 @@ section.post-content {
 }
 
 section.bloginfo {
-  margin-bottom: 6px;
+  margin-bottom: 0px;
 }
 
 .tagged {
