@@ -8,7 +8,6 @@ namespace :pm2 do
       if ps.empty?
         return nil
       else
-        # status: online, errored, stopped
         return ps[0]["pm2_env"]["status"]
       end
     end
@@ -31,16 +30,16 @@ namespace :pm2 do
     on roles(:web) do
       case app_status
       when nil
-        info 'App is not registerd'
+        info 'The application is not registered'
         start_app
       when 'stopped'
-        info 'App is stopped'
+        info 'The application is not running'
         restart_app
       when 'errored'
-        info 'App has errored'
+        info 'The application is in an erroneous state'
         restart_app
       when 'online'
-        info 'App is online'
+        info 'The application is already running'
         restart_app
       end
     end
