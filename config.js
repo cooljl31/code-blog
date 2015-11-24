@@ -14,9 +14,13 @@ config = {
         url: 'http://code.anirvan.me',
         mail: {},
         database: {
-            client: 'sqlite3',
+            client: 'mysql',
             connection: {
-                filename: path.join(__dirname, '/content/data/ghost.db')
+                host: 'localhost',
+                user: 'ghost',
+                password: 'ghost123',
+                database: 'ghost',
+                charset: 'utf8'
             },
             debug: false
         },
