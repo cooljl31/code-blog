@@ -10,3 +10,4 @@ set :deploy_to, "/mnt/data/blog"
 set :user, 'ubuntu'
 
 set :app_command, 'start.sh'
+set :process_name, 'node_server_code_blog'
