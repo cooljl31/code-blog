@@ -11,11 +11,7 @@ namespace :deploy do
   end
 
   after :install_packages, :restart do
-    on roles(:web) do
-        within current_path do
-            invoke 'pm2:restart'
-        end
-    end
+       invoke 'pm2:restart'
   end
 
 end

@@ -9,4 +9,4 @@ set :deploy_to, "/mnt/data/blog"
 
 set :user, 'ubuntu'
 
-set :app_command, 'npm start --production'
+set :app_command, 'start.sh'
