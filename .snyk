@@ -6,3 +6,8 @@ patch:
   SNYK-JS-LODASH-450202:
     - bookshelf > simple-extend > lodash:
         patched: '2019-07-09T08:02:11.845Z'
+  SNYK-JS-HTTPSPROXYAGENT-469131:
+    - snyk > proxy-agent > https-proxy-agent:
+        patched: '2019-10-08T08:07:26.844Z'
+    - snyk > proxy-agent > pac-proxy-agent > https-proxy-agent:
+        patched: '2019-10-08T08:07:26.844Z'
